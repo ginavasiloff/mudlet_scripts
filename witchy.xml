@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+    <AliasPackage>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>Witchy</name>
+            <script></script>
+            <command></command>
+            <packageName></packageName>
+            <regex></regex>
+            <Alias isActive="yes" isFolder="no">
+                <name>Broom</name>
+                <script></script>
+                <command>take broom from harness</command>
+                <packageName></packageName>
+                <regex>^broom$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Harness</name>
+                <script></script>
+                <command>put broom in harness</command>
+                <packageName></packageName>
+                <regex>^harness$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Charge</name>
+                <script>send(&quot;fuel broom with 50 gp&quot;)
+send(&quot;fuel broom with 50 gp&quot;)</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^charge$</regex>
+            </Alias>
+        </AliasGroup>
+    </AliasPackage>
+</MudletPackage>

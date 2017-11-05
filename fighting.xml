@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+    <AliasPackage>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>Fighting</name>
+            <script></script>
+            <command></command>
+            <packageName></packageName>
+            <regex></regex>
+            <Alias isActive="yes" isFolder="no">
+                <name>Consider</name>
+                <script>send(&quot;consider &quot; ..matches[2])</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^c (.*)$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Health</name>
+                <script>send(&quot;health &quot; ..matches[2])</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^h (.*)$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Loot</name>
+                <script>send(&quot;take &quot; ..matches[2] ..&quot; from corpse&quot;)
+send(&quot;bury corpse&quot;)</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^loot (.*)$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Bury</name>
+                <script></script>
+                <command>bury all</command>
+                <packageName></packageName>
+                <regex>^b$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Sword</name>
+                <script></script>
+                <command>draw sword</command>
+                <packageName></packageName>
+                <regex>^draw$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Sheathe</name>
+                <script></script>
+                <command>sheathe sword</command>
+                <packageName></packageName>
+                <regex>^sheathe$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Look at Corpse</name>
+                <script></script>
+                <command>look corpse</command>
+                <packageName></packageName>
+                <regex>^lc$</regex>
+            </Alias>
+        </AliasGroup>
+    </AliasPackage>
+</MudletPackage>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+    <AliasPackage>
+        <AliasGroup isActive="yes" isFolder="yes">
+            <name>Movement</name>
+            <script></script>
+            <command></command>
+            <packageName></packageName>
+            <regex></regex>
+            <Alias isActive="yes" isFolder="no">
+                <name>Journey</name>
+                <script>directions={
+[&quot;n&quot;] = &quot;north&quot;,
+[&quot;ne&quot;] = &quot;northeast&quot;,
+[&quot;e&quot;] = &quot;east&quot;,
+[&quot;se&quot;] = &quot;southeast&quot;,
+[&quot;s&quot;] = &quot;south&quot;,
+[&quot;sw&quot;] = &quot;southwest&quot;,
+[&quot;w&quot;] = &quot;west&quot;,
+[&quot;nw&quot;] = &quot;northwest&quot;,
+}
+
+send(&quot;journey &quot; ..directions[matches[2]])</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^j (.*)$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Walk</name>
+                <script>directions={
+[&quot;n&quot;] = &quot;north&quot;,
+[&quot;e&quot;] = &quot;east&quot;,
+[&quot;s&quot;] = &quot;south&quot;,
+[&quot;w&quot;] = &quot;west&quot;,
+}
+
+send(directions[match[2]])</script>
+                <command></command>
+                <packageName></packageName>
+                <regex>^(.[nesw])$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Northeast</name>
+                <script></script>
+                <command>northeast</command>
+                <packageName></packageName>
+                <regex>^ne$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Southeast</name>
+                <script></script>
+                <command>southeast</command>
+                <packageName></packageName>
+                <regex>^se$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Southwest</name>
+                <script></script>
+                <command>southwest</command>
+                <packageName></packageName>
+                <regex>^sw$</regex>
+            </Alias>
+            <Alias isActive="yes" isFolder="no">
+                <name>Northwest</name>
+                <script></script>
+                <command>northwest</command>
+                <packageName></packageName>
+                <regex>^nw$</regex>
+            </Alias>
+        </AliasGroup>
+    </AliasPackage>
+</MudletPackage>
